@@ -37,7 +37,7 @@ align-self: center;
     margin-left: 4rem;
     margin-bottom: 1.rem;
     width: 5rem;
-    height: 2px;
+    height: .2rem;
     transform: rotate(-45deg);
 }
 
@@ -49,7 +49,7 @@ align-self: center;
         margin-left: -4rem;
         margin-bottom: 1.5rem;
         width: 5rem;
-        height: 2px;
+        height: .2rem;
         transform: rotate(45deg);
     }
 
@@ -83,7 +83,7 @@ align-self: center;
     max-width: 100%;
     background-color: rgb(19, 56, 42);
     border-radius: 20%;
-    transition: all .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .img__wrapper {
@@ -107,21 +107,29 @@ img {
     display: flex;
     justify-content: space-between;
     width: 90vw;
-    height: 10vh;
+    height: 12vh;
     border-radius: 20%;
     border-style: double;
     border-color: rgb(15, 26, 57);
     border-width: 1em;
     margin: 0.2% auto;
     background-color: rgb(19, 56, 42);
+    @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    }
 }
 
 .phrases__wrapper {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     min-width: 40%;
     overflow: hidden;
     padding-left: 1%;
+    @media (max-width: 768px) {
+        height: 7vh;
+        align-items: center;
+        }
+
 }
 
 .phrases {
@@ -130,15 +138,21 @@ img {
     justify-content: space-between;
     align-items: center;
     color: beige;
-    font-size: 2.2vw;
-    transition: all .5s ease-in-out;
+    transition: transform .5s;
+    font-size: 2.3vw;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+    }
 }
 
 .phrase {
-    align-self: center;
     min-width: 100%;
-    transition: all .5s;
+    /* transition: .5s; */
     white-space: nowrap;
+    transition: transform .5s;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .buttons {
@@ -149,6 +163,12 @@ img {
     align-items:center;
     gap: .2rem;
     padding-right: 0.3rem;
+    @media (max-width: 768px) {
+        justify-content: center;
+        }
+    @media (max-width: 348px) {
+        gap: 0;
+    }
 }
 
 
@@ -156,7 +176,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(133, 127, 255);
+    /* background-color: rgb(133, 127, 255); */
     padding: 0.6rem 0.3rem;
     border-radius: 30%;
     cursor: pointer;
