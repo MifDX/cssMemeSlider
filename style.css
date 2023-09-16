@@ -11,7 +11,7 @@ body {
 .body__wrapper {
     margin: 2% auto;
     background-color: darkslategray;
-    }
+}
 
 .wrapper {
     display: flex;
@@ -21,7 +21,6 @@ body {
     padding-top: 3rem;
     gap: 1%;
     background-color: darkslategray;
-
 }
 
 input {
@@ -29,8 +28,10 @@ input {
     align-self: center;
 }
 
+/*----Antennas----*/
+
 .antenna1 {
-align-self: center;
+    align-self: center;
     content: "";
     display: flex;
     background-color: rgb(15, 26, 57);;
@@ -43,14 +44,14 @@ align-self: center;
 
 .antenna2 {
     align-self: center;
-        content: "";
-        display: flex;
-        background-color: rgb(15, 26, 57);;
-        margin-left: -4rem;
-        margin-bottom: 1.5rem;
-        width: 5rem;
-        height: .2rem;
-        transform: rotate(45deg);
+    content: "";
+    display: flex;
+    background-color: rgb(15, 26, 57);;
+    margin-left: -4rem;
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: .2rem;
+    transform: rotate(45deg);
     }
 
 /*-----Slider----*/
@@ -76,7 +77,6 @@ align-self: center;
     border-radius: 20%;
 }
 
-
 .slider {
     display: flex;
     justify-content: space-between;
@@ -100,7 +100,6 @@ img {
     border-radius: 20%;
 }
 
-
 /*-----Contecst----*/
 
 .context_wrapper {
@@ -121,14 +120,13 @@ img {
 
 .phrases__wrapper {
     display: flex;
-    /* align-items: center; */
     min-width: 40%;
     overflow: hidden;
     padding-left: 1%;
     @media (max-width: 768px) {
         height: 7vh;
         align-items: center;
-        }
+    }
 
 }
 
@@ -139,9 +137,9 @@ img {
     align-items: center;
     color: beige;
     transition: transform .5s;
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     @media (max-width: 768px) {
-        font-size: 3.5vw;
+        font-size: 3.6vw;
     }
 }
 
@@ -212,8 +210,6 @@ img {
     background-color: indigo;
 }
 
-/*----slide switch----*/
-
 #btn0:checked ~ .context_wrapper .buttons [for="btn0"] .pagination,
 #btn1:checked ~ .context_wrapper .buttons [for="btn1"] .pagination,
 #btn2:checked ~ .context_wrapper .buttons [for="btn2"] .pagination,
@@ -225,6 +221,8 @@ img {
     color:coral;
     background-color: indigo;
 }
+
+/*----slide switch----*/
 
 #btn0:checked ~ .slider__wrapper .slider__overflow .slider,
 #btn0:checked ~ .context_wrapper .phrases__wrapper .phrases {
