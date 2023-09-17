@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-self: center;
     padding-top: 3rem;
-    gap: 1%;
+    gap: 1rem;
     background-color: darkslategray;
 }
 
@@ -146,7 +146,6 @@ img {
 
 .phrase {
     min-width: 100%;
-    /* transition: .5s; */
     white-space: nowrap;
     transition: transform .5s;
     @media (max-width: 768px) {
@@ -175,7 +174,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(133, 127, 255); */
     padding: 0.6rem 0.3rem;
     border-radius: 30%;
     cursor: pointer;
