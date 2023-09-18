@@ -126,7 +126,6 @@ img {
     padding-left: 1%;
     @media (max-width: 768px) {
         height: 7vh;
-        align-items: center;
     }
 
 }
@@ -148,9 +147,6 @@ img {
     min-width: 100%;
     white-space: nowrap;
     transition: transform .5s;
-    @media (max-width: 768px) {
-        text-align: center;
-    }
 }
 
 .buttons {
@@ -217,8 +213,8 @@ img {
 #btn5:checked ~ .context_wrapper .buttons [for="btn5"] .pagination, 
 #btn6:checked ~ .context_wrapper .buttons [for="btn6"] .pagination,
 #btn7:checked ~ .context_wrapper .buttons [for="btn7"] .pagination {
-    color:coral;
-    background-color: indigo;
+    color:indigo;
+    background-color: aquamarine;
 }
 
 /*----slide switch----*/
