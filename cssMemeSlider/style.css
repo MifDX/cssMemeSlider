@@ -208,6 +208,18 @@ img {
     
 }
 
+#btn0:active ~ .context_wrapper .buttons [for="btn0"] .pagination,
+#btn1:active ~ .context_wrapper .buttons [for="btn1"] .pagination,
+#btn2:active ~ .context_wrapper .buttons [for="btn2"] .pagination,
+#btn3:active ~ .context_wrapper .buttons [for="btn3"] .pagination,
+#btn4:active ~ .context_wrapper .buttons [for="btn4"] .pagination,
+#btn5:active ~ .context_wrapper .buttons [for="btn5"] .pagination, 
+#btn6:active ~ .context_wrapper .buttons [for="btn6"] .pagination,
+#btn7:active ~ .context_wrapper .buttons [for="btn7"] .pagination {
+    color:indigo;
+    background-color: chartreuse;
+}
+
 #btn0:checked ~ .context_wrapper .buttons [for="btn0"] .pagination,
 #btn1:checked ~ .context_wrapper .buttons [for="btn1"] .pagination,
 #btn2:checked ~ .context_wrapper .buttons [for="btn2"] .pagination,
@@ -242,6 +254,16 @@ img {
     border-color:crimson;
 }
 
+#btn0:checked ~ .context_wrapper .buttons .btn0:hover .pagination,
+#btn1:checked ~ .context_wrapper .buttons .btn1:hover .pagination,
+#btn2:checked ~ .context_wrapper .buttons .btn2:hover .pagination,
+#btn3:checked ~ .context_wrapper .buttons .btn3:hover .pagination,
+#btn4:checked ~ .context_wrapper .buttons .btn4:hover .pagination,
+#btn5:checked ~ .context_wrapper .buttons .btn5:hover .pagination, 
+#btn6:checked ~ .context_wrapper .buttons .btn6:hover .pagination,
+#btn7:checked ~ .context_wrapper .buttons .btn7:hover .pagination {
+    border-color:crimson;
+}
 /*----slide switch----*/
 
 #btn0:checked ~ .slider__wrapper .slider__overflow .slider,
