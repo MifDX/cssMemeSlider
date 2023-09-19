@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
+
     padding-top: 3rem;
     gap: 1rem;
     background-color: darkslategray;
@@ -106,8 +106,9 @@ img {
 .context_wrapper {
     display: flex;
     justify-content: space-between;
+    
     width: 90vw;
-    height: 12vh;
+    height: 17vh;
     border-radius: 20%;
     border-style: double;
     border-color: rgb(15, 26, 57);
@@ -140,6 +141,7 @@ img {
     font-size: 2.4vw;
     @media (max-width: 768px) {
         font-size: 3.6vw;
+        align-items:baseline;
     }
 }
 
@@ -154,7 +156,6 @@ img {
     max-height: 100%;
     display: flex;
     justify-content:space-between;
-    align-items:center;
     gap: .2rem;
     padding-right: 0.3rem;
     @media (max-width: 768px) {
