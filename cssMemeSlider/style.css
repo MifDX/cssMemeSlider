@@ -1,0 +1,286 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+}
+
+.body__wrapper {
+    margin: 2% auto;
+    background-color: #0d1117;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 3rem;
+    gap: 1rem;
+    background-color: #0d1117;
+}
+
+input {
+    display: none;
+    align-self: center;
+}
+
+/*-----Slider----*/
+
+.slider__wrapper {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #2F4F4F;
+    /* padding: 0.1%; */
+    border-radius: 1rem;
+    border-style: ridge;
+    border-color: grey;
+    border-width: 1rem;
+}
+
+.slider__overflow {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #2F4F4F;
+    border-radius: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.img__wrapper {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    /* border-radius: 0.3rem; */
+}
+
+/*-----Contecst----*/
+
+.context_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    width: 90vw;
+    height: 10%;
+    border-radius: 1rem;
+    border-style: outset;
+    border-color: grey;
+    border-width: 0.5em;
+    margin: 0.2% auto;
+    background-color: #2F4F4F;
+    @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-bottom: 3%;
+    }
+}
+
+.phrases__wrapper {
+    display: flex;
+    min-width: 40%;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        height: 20%;
+    }
+
+}
+
+.phrases {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: beige;
+    transition: transform .5s;
+    font-size: 2.4vw;
+    @media (max-width: 768px) {
+        font-size: 3.4vw;
+        align-items:baseline;
+    }
+}
+
+.phrase {
+    min-width: 100%;
+    white-space: nowrap;
+    transition: transform .5s;
+}
+
+.buttons {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: .2rem;
+    padding-right: 0.3rem;
+    @media (max-width: 768px) {
+        justify-content: center;
+        }
+    @media (max-width: 348px) {
+        gap: 0;
+    }
+}
+
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0.3rem;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: .5rem;
+    height: .6rem;
+    background-color:coral ;
+    align-items: center;    
+    border-radius: 40%;
+    border-style: ridge;
+    border-color: darkslategray;
+    cursor: pointer;
+    color:indigo;
+    transition: all .5s ease-in-out;
+    font-size: small;
+    padding: 0.5rem;
+}
+
+.pagination:hover {
+    color:coral;
+    background-color: indigo;
+}
+
+.btn-wrapper:hover .pagination {
+    color:coral;
+    background-color: indigo;
+    
+}
+
+#btn0:active ~ .context_wrapper .buttons [for="btn0"] .pagination,
+#btn1:active ~ .context_wrapper .buttons [for="btn1"] .pagination,
+#btn2:active ~ .context_wrapper .buttons [for="btn2"] .pagination,
+#btn3:active ~ .context_wrapper .buttons [for="btn3"] .pagination,
+#btn4:active ~ .context_wrapper .buttons [for="btn4"] .pagination,
+#btn5:active ~ .context_wrapper .buttons [for="btn5"] .pagination, 
+#btn6:active ~ .context_wrapper .buttons [for="btn6"] .pagination,
+#btn7:active ~ .context_wrapper .buttons [for="btn7"] .pagination {
+    color:indigo;
+    background-color: chartreuse;
+}
+
+#btn0:checked ~ .context_wrapper .buttons [for="btn0"] .pagination,
+#btn1:checked ~ .context_wrapper .buttons [for="btn1"] .pagination,
+#btn2:checked ~ .context_wrapper .buttons [for="btn2"] .pagination,
+#btn3:checked ~ .context_wrapper .buttons [for="btn3"] .pagination,
+#btn4:checked ~ .context_wrapper .buttons [for="btn4"] .pagination,
+#btn5:checked ~ .context_wrapper .buttons [for="btn5"] .pagination, 
+#btn6:checked ~ .context_wrapper .buttons [for="btn6"] .pagination,
+#btn7:checked ~ .context_wrapper .buttons [for="btn7"] .pagination {
+    color:indigo;
+    background-color: aquamarine;
+}
+
+#btn0:checked ~ .context_wrapper .buttons [for="btn0"] .pagination:hover,
+#btn1:checked ~ .context_wrapper .buttons [for="btn1"] .pagination:hover,
+#btn2:checked ~ .context_wrapper .buttons [for="btn2"] .pagination:hover,
+#btn3:checked ~ .context_wrapper .buttons [for="btn3"] .pagination:hover,
+#btn4:checked ~ .context_wrapper .buttons [for="btn4"] .pagination:hover,
+#btn5:checked ~ .context_wrapper .buttons [for="btn5"] .pagination:hover, 
+#btn6:checked ~ .context_wrapper .buttons [for="btn6"] .pagination:hover,
+#btn7:checked ~ .context_wrapper .buttons [for="btn7"] .pagination:hover {
+    border-color:crimson;
+}
+
+#btn0:checked ~ .context_wrapper .buttons .btn0:hover .pagination,
+#btn1:checked ~ .context_wrapper .buttons .btn1:hover .pagination,
+#btn2:checked ~ .context_wrapper .buttons .btn2:hover .pagination,
+#btn3:checked ~ .context_wrapper .buttons .btn3:hover .pagination,
+#btn4:checked ~ .context_wrapper .buttons .btn4:hover .pagination,
+#btn5:checked ~ .context_wrapper .buttons .btn5:hover .pagination, 
+#btn6:checked ~ .context_wrapper .buttons .btn6:hover .pagination,
+#btn7:checked ~ .context_wrapper .buttons .btn7:hover .pagination {
+    border-color:crimson;
+}
+
+#btn0:checked ~ .context_wrapper .buttons .btn0:hover .pagination,
+#btn1:checked ~ .context_wrapper .buttons .btn1:hover .pagination,
+#btn2:checked ~ .context_wrapper .buttons .btn2:hover .pagination,
+#btn3:checked ~ .context_wrapper .buttons .btn3:hover .pagination,
+#btn4:checked ~ .context_wrapper .buttons .btn4:hover .pagination,
+#btn5:checked ~ .context_wrapper .buttons .btn5:hover .pagination, 
+#btn6:checked ~ .context_wrapper .buttons .btn6:hover .pagination,
+#btn7:checked ~ .context_wrapper .buttons .btn7:hover .pagination {
+    border-color:crimson;
+}
+/*----slide switch----*/
+
+#btn0:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn0:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(0%);
+}
+
+#btn1:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn1:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-100%);
+}
+
+#btn2:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn2:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-200%);
+}
+
+#btn3:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn3:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-300%);
+}
+
+#btn4:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn4:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-400%);
+}
+
+#btn5:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn5:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-500%);
+}
+
+#btn6:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn6:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-600%);
+}
+
+#btn7:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn7:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-700%);
+}
+
+#btn8:checked ~ .slider__wrapper .slider__overflow .slider,
+#btn8:checked ~ .context_wrapper .phrases__wrapper .phrases {
+    transform: translateX(-800%);
+}
